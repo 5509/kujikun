@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>KUJI*KUN</title>
+  <link rel="stylesheet" href="styles/app.css">
+</head>
+<body>
+
+<div id="kujikun" class="state-0">
+
+  <h1>KUJI*KUN</h1>
+
+  <div class="container number">
+    <p>先に人数を決めます</p>
+
+    <div>
+      <input type="number" id="inputNumber" value="0"><br>
+      <div class="buttonContainer"><a id="btSetNumber" class="button" href="#">人数を決定する</a></div>
+    </div>
+  </div>
+
+  <div class="container draw">
+    <p>くじを引くボタンを押すと <i>1~<span id="selectedNumber"></span></i> の中でランダムな数字が重複ナシで表示されます（一度引いた数字は引かれません）</p>
+
+    <div class="buttonContainer"><a id="btDrawNumber" class="button" href="#">くじを引く</a></div>
+
+    <div id="drawn"></div>
+
+    <ul id="list" class="list">
+    </ul>
+  </div>
+  <p class="btReset"><a id="btReset" href="#">人数を決め直す</a></p>
+</div>
+
+<script src="scripts/app.js"></script>
+
+</body>
+</html>
